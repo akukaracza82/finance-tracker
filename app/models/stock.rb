@@ -11,8 +11,8 @@ class Stock < ApplicationRecord
    end
 end
 
-// client is defined to get info from IEX based on an API key kept in .env file
-//it works on sandbox enpoint. Sandbox mode available on their website
-// begin - rescue - end #=> designed to rescue an app from an error that comes up.
-// it is here to make sure, that it returns nil when client doesnt return any result
-// and therefore gives alert, that invalid symbol has been entered in stocks_controller
+#  client is defined to get info from IEX based on an API key kept in .env file
+# it works on sandbox enpoint. Sandbox mode available on their website
+#  begin - rescue - end #=> designed to rescue an app from an error that comes up.
+#  it is here to make sure, that it returns nil when client doesnt return any result
+#  and therefore gives alert, that invalid symbol has been entered in stocks_controller
