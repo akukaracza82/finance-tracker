@@ -12,7 +12,11 @@ class Stock < ApplicationRecord
     rescue => exception
       return nil
     end
-   end
+  end
+
+  def self.check_db(ticker_symbol)
+      where(ticker: ticker_symbol).first
+  end
 end
 
 #  client is defined to get info from IEX based on an API key kept in .env file
